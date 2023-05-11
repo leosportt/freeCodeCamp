@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+<div class="container">
+      <header class="header">
+      <h1 id="title" class="text-center">Formulário de Pesquisa freeCodeCamp</h1>
+<p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+      </header>
+<form id="survey-form">
+<div class="form-group">
+<label id="name-label" for="name">Nome</label>
+<input type="text" name="name" id="name" class="form-control" placeholder="Insira seu nome" required />
+</div>
+<div class="form-group">
+<label id="email-label" for="email">Email</label>
+<input type="email" name="email" id="email" class="form-control" placeholder="Insira seu email" required />
+</div>
+<div class="form-group">
+<label id="number-label" for="number">Idade<span class="clue">(opcional)</span></label>
+<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Idade" />
+</div>
+<div class="form-group">
+<p>Qual opção descreve melhor a sua função atual?</p>
+<select id="dropdown" name="role" class="form-control" required>
+<option disabled selected value>Selecione a função atual</option>
+<option value="student">Estudante</option>
+<option value="job">Empregado</option>
+<option value="learner">Estagiário</option>
+<option value="preferNo">Prefiro não dizer</option>
+<option value="other">Outro</option>
+</select>
+</div>
+
+<div class="form-group">
+<p>Você recomendaria o freeCodeCamp para um amigo?</p>
+<label>
+  <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Com certeza</label>
+<label>
+  <input name="user-recommend" value="maybe" type="radio" class="input-radio"/>Talvez</label>
+<label>
+  <input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>Não tenho certeza
+</label>
+</div>
+
+<div class="form-group">
+  <p>Qual é o seu recurso favorito do freeCodeCamp?</p>
+<select id="most-like" name="mostlike" class="form-control required">
+  <option disabled selected value>Escolha uma opção</option>
+  <option value="challenges">Desafios</option>
+  <option value="projects">Projetos</option>
+  <option value="community">Comunidade</option>
+  <option value="openSource">Código aberto</option>
+</select>
+</div>
+
+<div class="form-group">
+<p>O que você gostaria que fosse melhorado?<span class="clue">(Marque tudo o que for aplicável)</span></p>
+
+<label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>Projetos Front-end</label>
+
+<label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"/>Projetos Back-end</label>
+
+<label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>Visualização de Dados</label>
+
+<label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox"/>Desafios</label>
+
+<label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox"/>Open Source Community</label>
+
+<label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox"/>Gitter help rooms</label>
+
+<label><input name="prefer" value="videos" type="checkbox" class="input-checkbox"/>Vídeos</label>
+
+<label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox"/>City Meetups</label>
+
+<label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox"/>Wiki</label>
+
+<label><input name="prefer" value="forum" type="checkbox" class="input-checkbox"/>Fórum</label>
+
+<label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox"/>Cursos Adicionais</label>
+</div>
+
+<div class="form-group">
+<p>Agum comentário ou sugestão?</p>
+<textarea id="comments" class="input-textarea" name="comment" placeholder="Escreva seu comentário aqui..."></textarea>
+</div>
+
+<div class="form-group">
+<button type="submit" id="submit" class="submit-button">
+  Enviar
+</button>
+</div>
+      </form>
+</div>
+      </body>
+      </html>
